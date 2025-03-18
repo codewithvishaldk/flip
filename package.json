@@ -1,33 +1,42 @@
 {
-  "name": "flipkart",
-  "version": "1.0.0",
-  "description": "Full Stack Flipkart Ecommerce",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
-  },
-  "author": "Jigar Sable",
-  "license": "ISC",
+  "name": "flipkart-clone",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^7.6.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.1",
-    "cloudinary": "^1.28.1",
-    "concurrently": "^7.6.0",
-    "cookie-parser": "^1.4.6",
-    "dotenv": "^14.2.0",
-    "express": "^4.17.2",
-    "express-fileupload": "^1.2.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.7",
-    "nodemailer": "^6.7.2",
-    "paytmchecksum": "^1.5.0",
-    "stripe": "^8.200.0",
-    "uuid": "^8.3.2",
-    "validator": "^13.7.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.20.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "react-redux": "^7.2.1",
+    "react-responsive-carousel": "^3.2.10",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
